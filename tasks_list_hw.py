@@ -28,14 +28,10 @@ index_min_element = _list.index(min_element)
 _list[index_max_element], _list[index_min_element] = _list[index_min_element], _list[index_max_element]
 print(_list)
 
-print()
+
 # Дан список. Необходимо определить, есть ли в списке повторяющиеся элементы, если да, то вывести на экран это значение.
-_list = [1, 2, 3, 4, 4, 5]
-for i in _list:  # ???????????????????????
-    if _list.count(i) == 1:
-        break
-print(i)
-# print([i for i in _list if _list.count(i) >= 1]) - ?????????????????????????????
+_list = [1, 2, 3, 4, 4, 5, 5]
+print([i for i in _list if _list.count(i) > 1])
 
 
 #  Дан список. Необходимо найти сумму и произведение элементов списка. Результаты вывести на экран.
